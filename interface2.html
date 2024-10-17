@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results - Game Survey</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="header-image.jpg" alt="Header Image" class="header-image" />
+      </header>
+      <main>
+        <div class="h1-wrapper">
+          <div class="h1-imageLeft">
+            <img id="img-quokkaF" src="images/quokkaF.png" />
+          </div>
+          <div id="h1-text"><h1>現在的幸福指數</h1></div>
+          <div class="h1-imageRight">
+            <img id="img-quokkaM" src="images/quokkaM.png" />
+          </div>
+        </div>
+        <div class="charts-wrapper">
+          <div class="chart-container">
+            <h2 id="h2-before">BEFORE</h2>
+            <canvas id="beforeChart"></canvas>
+          </div>
+          <div class="chart-container">
+            <h2 id="h2-after">AFTER</h2>
+            <canvas id="afterChart"></canvas>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>

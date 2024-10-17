@@ -1,0 +1,130 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(227, 121, 63);
+  color: white;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.header-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.question-buttons {
+  flex: 1;
+  margin-right: 20px;
+  padding-left: 50px;
+}
+
+.question {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  color: rgb(227, 121, 63);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+
+.answer-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(129, 188, 213);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+  margin: 5px;
+}
+
+.answer-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.answer-btn:active {
+  transform: translateY(0);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ladder-image {
+  flex: 0 0 auto;
+  width: 30%;
+  padding-left: 10px;
+  max-width: 300px;
+}
+
+.ladder-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .question-buttons {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .ladder-image {
+    width: 100%;
+    max-width: none;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+
+  .answer-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+}

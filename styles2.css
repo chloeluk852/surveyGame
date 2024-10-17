@@ -1,0 +1,103 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(227, 121, 63);
+  color: white;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.header-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.charts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.chart-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+  flex: 1;
+  max-width: 2000px;
+}
+
+.h1-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 66px;
+}
+
+.h1-imageRight {
+  display: grid;
+  max-width: 60px;
+  place-items: center;
+}
+
+.h1-imageLeft {
+  display: grid;
+  max-width: 60px;
+  place-items: center;
+}
+
+#img-quokkaF {
+  max-width: 60px;
+}
+#img-quokkaM {
+  max-width: 60px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+#h2-before {
+  color: rgb(227, 121, 63);
+}
+
+#h2-after {
+  color: rgb(129, 188, 213);
+}
+
+@media (max-width: 768px) {
+  #h1-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .charts-wrapper {
+    flex-direction: column;
+  }
+
+  .chart-container {
+    padding: 10px;
+  }
+}
